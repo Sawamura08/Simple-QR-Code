@@ -1,0 +1,97 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #77a1d3; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to right,
+		#e684ae,
+		#79cbca,
+		#77a1d3
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#e684ae,
+		#79cbca,
+		#77a1d3
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+main {
+	justify-content: center;
+	align-items: center;
+	background-color: #caf0f8;
+	height: 75vh;
+	width: 90%;
+	padding: 1rem;
+	border-radius: 15px;
+}
+
+div {
+	background-color: #fff;
+	height: 100%;
+	width: 360px;
+	flex-flow: column wrap;
+	text-align: center;
+	justify-content: center;
+	margin: 0 auto;
+	padding: 1rem;
+	border-radius: 15px;
+}
+
+img {
+	width: 40vh;
+	border-radius: 10px;
+}
+
+div .improve {
+	margin: 1rem 0.5rem;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+div .scan {
+	font-size: 1rem;
+	color: grey;
+	font-weight: 600;
+	margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 465px) {
+	body {
+		background-color: #77a1d3;
+		display: flex;
+		max-height: 100%;
+	}
+
+	main {
+		height: 100vh;
+		width: 100%;
+		border-radius: 0;
+	}
+	div {
+		max-width: 95%;
+		height: 90%;
+		margin-top: 10%;
+	}
+
+	div .improve {
+		margin: 1rem 0.5rem;
+		font-size: 1.2rem;
+		color: #011627;
+	}
+	div .scan {
+		font-size: 0.8rem;
+		color: grey;
+		font-weight: 600;
+		margin-bottom: 1rem;
+	}
+}
