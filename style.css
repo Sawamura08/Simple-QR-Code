@@ -65,6 +65,23 @@ div .scan {
 	margin-bottom: 1rem;
 }
 
+/* smallest */
+
+@media all and (max-width: 300px) {
+	.container {
+		max-height: 60%;
+		margin: 4rem 0;
+	}
+
+	.container .improve {
+		font-size: 1rem;
+	}
+
+	.container .scan {
+		font-size: 0.6rem;
+	}
+}
+
 @media screen and (max-width: 465px) {
 	body {
 		background-color: #77a1d3;
@@ -79,8 +96,8 @@ div .scan {
 	}
 	div {
 		max-width: 95%;
-		height: 90%;
-		margin-top: 10%;
+		height: 70%;
+		margin-top: 20%;
 	}
 
 	div .improve {
@@ -93,5 +110,37 @@ div .scan {
 		color: grey;
 		font-weight: 600;
 		margin-bottom: 1rem;
+	}
+
+	.container img {
+		max-width: 100%;
+	}
+}
+
+@media screen and (min-width: 466px) {
+	.container {
+		max-width: 100%;
+	}
+
+	main {
+		height: 80%;
+	}
+
+	.container img {
+		max-width: 100%;
+	}
+}
+
+@media screen and (min-height: 1000px) {
+	.container {
+		min-width: 80%;
+	}
+
+	.container .improve {
+		font-size: 2.2rem;
+	}
+
+	.container .scan {
+		font-size: 1.5rem;
 	}
 }
